@@ -1,0 +1,155 @@
+* {
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(148, 80, 105, 1) 0%,
+    rgba(242, 212, 220, 1) 54%,
+    rgba(43, 120, 139, 1) 100%
+  );
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.container {
+  height: 650px;
+  width: 500px;
+  border-radius: 20px;
+  background-color: #f6f5f4;
+  margin-left: auto;
+  margin-right: auto;
+  .login {
+    font-family: "Dela Gothic One";
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    letter-spacing: 1px;
+  }
+  .signup {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    p {
+      color: black;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      color: black;
+      font-size: 15px;
+    }
+  }
+  .socialmedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    .social {
+      height: 50px;
+      width: 300px;
+      border-radius: 50px;
+      border: 3px solid #2b788b;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      a {
+        color: black;
+        height: 50px;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        text-decoration: none;
+      }
+      img {
+        width: 30px;
+      }
+    }
+  }
+  .line {
+    h3 {
+      position: relative;
+      color: #757575;
+      text-align: center;
+    }
+    h3:before {
+      content: "";
+      background: #757575;
+      display: block;
+      width: 230px;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+    h3:after {
+      content: "";
+      background: #757575;
+      display: block;
+      width: 230px;
+      height: 2px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+  }
+  .mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .input-box {
+      h6 {
+        color: #757575;
+        margin: 0;
+      }
+      input {
+        height: 40px;
+        width: 300px;
+        border-radius: 10px;
+        border-color: #2b788b;
+      }
+    }
+  }
+  .input-box-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    input {
+      font-family: "Dela Gothic One";
+      letter-spacing: 1px;
+      height: 50px;
+      width: 300px;
+      border-radius: 10px;
+      border-color: #2b788b;
+      border-radius: 50px;
+      cursor: pointer;
+      &:hover {
+        letter-spacing: 1px;
+        color: white;
+        background: #2b788b;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
